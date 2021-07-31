@@ -1,0 +1,25 @@
+create database customer;
+use customer;
+
+create table Accounts(
+
+customer_id int primary key auto_increment,
+customer_name varchar(256),
+customer_ActNum long,
+Act_balance int
+
+);
+
+insert into Accounts values(1,"ARun",12345678910,10000);
+insert into Accounts values(2,"BRun",23456789101,10000);
+insert into Accounts values(3,"CRun",34567891012,10000);
+insert into Accounts values(4,"DRun",45678910123,10000);
+insert into Accounts values(5,"ERun",56789101234,10000);
+insert into Accounts values(6,"FRun",67891012345,10000);
+insert into Accounts values(7,"GRun",78910123456,10000);
+insert into Accounts values(8,"HRun",89101234567,10000);
+insert into Accounts values(9,"IRun",91012345678,10000);
+insert into Accounts values(10,"GRun",10123456789,10000);
+insert into Accounts values(11,"HRun",11234567891,10000);
+
+select * from Accounts;
